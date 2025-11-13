@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Club ー HIMTIKA ー Himpunan Mahasiswa Informatika UNSIKA</title>
+
+    <meta name="description" content="Ruang kolaboratif untuk memberikan kesempatan bagi para mahasiswa informatika untuk mempelajari ilmu pengetahuan di bidang IT. Kelas yang sudah diadakan, yaitu: Data Science, Mobile Development, UI/UX, Web Development, dan Cyber Security." />
+    <meta name="keywords" content="HIMTIKA, Study Club, Himpunan Mahasiswa Informatika, UNSIKA, Fakultas Ilmu Komputer, Fasilkom, Informatika" />
+    <meta name="author" content="HIMTIKA Unsika" />
+
+    <!-- ICON -->
+    <link rel="icon" href="assets/images/logo/logo-study-club.png" type="image/png" />
+    <link rel="canonical" href="https://himtika.cs.unsika.ac.id" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/src/output.css">
+    <link rel="stylesheet" href="assets/src/responsive.css">
+</head>
+<body>
+
+    <!-- START NAVBAR -->
+    <nav id="navbar" class="w-full fixed z-50 top-0 left-0 px-6 py-4 transition-all duration-500 sm:px-12 md:px-15 lg:px-18 md:py-3.5 font-jakarta bg-white text-bondi-sc selection:bg-bondi-sc selection:text-white shadow-md">
+        <div class="flex justify-between items-center">
+            <a href="#home" class="transition-all duration-500 flex items-center gap-1.5">
+                <img src="assets/images/logo/logo-study-club.svg" alt="study-club-logo-navbar" class="h-[50px] lg:h-[65px]" />
+                <span class="text-cyan-sc font-semibold tracking-tight text-lg leading-5 sm:text-2xl sm:leading-6">Study <span class="block text-bondi-sc">Club</span></span>
+            </a>
+            <div>
+                <button class="nav-icon block lg:hidden" id="hamburger" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div 
+                    class="hidden absolute top-[82px] sm:top-[72px] md:top-[85px] lg:top-[88px] right-0 left-0 py-3 z-20 lg:block lg:static lg:max-w-full lg:bg-transparent lg:shadow-none transition-all duration-500 ease-in-out" 
+                    id="nav-menu">
+                    <ul class="block lg:flex lg:gap-[70px] font-medium font-orbitron text-center uppercase">
+                        <li>
+                            <a href="#home" class="w-full py-2 lg:py-0 lg:w-auto text-center group block cursor-pointer transition duration-300">
+                                <span class="inline-block py-1 lg:py-0 text-sm md:text-base
+                                            tracking-wide font-semibold
+                                            border-b-2 border-transparent 
+                                            group-hover:border-b-bondi-sc 
+                                            transition duration-300">
+                                Home
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about" class="w-full py-2 lg:py-0 lg:w-auto text-center group block cursor-pointer transition duration-300">
+                                <span class="inline-block py-1 lg:py-0 text-sm md:text-base
+                                            tracking-wide font-semibold
+                                            border-b-2 border-transparent 
+                                            group-hover:border-b-bondi-sc 
+                                            transition duration-300">
+                                About us
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#wish-section" class="w-full py-2 lg:py-0 lg:w-auto text-center group block cursor-pointer transition duration-300">
+                                <span class="inline-block py-1 lg:py-0 text-sm md:text-base
+                                            tracking-wide font-semibold
+                                            border-b-2 border-transparent 
+                                            group-hover:border-b-bondi-sc 
+                                            transition duration-300">
+                                Class
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#gallery-section" class="w-full py-2 lg:py-0 lg:w-auto text-center group block cursor-pointer transition duration-300">
+                                <span class="inline-block py-1 lg:py-0 text-sm md:text-base
+                                            tracking-wide font-semibold
+                                            border-b-2 border-transparent 
+                                            group-hover:border-b-bondi-sc 
+                                            transition duration-300">
+                                Timeline
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>   
+    <!-- END NAVBAR -->
+    
+    <!-- START HERO SECTION -->
+    <section id="home" class="relative pt-40 h-screen md:h-auto px-6 sm:px-16 md:px-12 lg:px-28 bg-radial-[at_40%_50%] from-cyan-200/50 from-5% to-gray-sc to-60% transition-all duration-500 selection:bg-bondi-sc selection:text-white flex justify-center md:block">
+        <div>
+            <div class="relative flex flex-col justify-center items-center">
+                <!-- asset lingkaran putih -->
+                <div class="absolute z-0 -top-5 left-90 bg-white w-30 h-30 rounded-full"></div>
+
+                <h1 class="z-1 text-4xl sm:text-5xl lg:text-6xl text-cyan-sc font-semibold">Study Club</h1>
+                <p class="z-1 mt-3 lg:mt-4 text-xl lg:text-4xl text-bondi-sc font-semibold text-center tracking-tight lg:leading-11 max-w-[700px]">"Learn, laugh, level up! With your innovations and creations to become a master in the new era."</p>
+                <div class="flex items-center gap-2 mt-5">
+                    <div class="flex -space-x-2.5">
+                        <img src="assets/images/hero-section/mahasiswa-informatika-1.png" alt="mahasiswa-informatika-1" class="w-7 h-7 md:w-10 md:h-10 rounded-full">
+                        <img src="assets/images/hero-section/mahasiswa-informatika-2.png" alt="mahasiswa-informatika-1" class="w-7 h-7 md:w-10 md:h-10 rounded-full">
+                        <img src="assets/images/hero-section/mahasiswa-informatika-3.png" alt="mahasiswa-informatika-1" class="w-7 h-7 md:w-10 md:h-10 rounded-full">
+                    </div>
+                    <p id="jml-mahasiswa" class="text-sm font-medium">
+                        +<span data-count="69" class="text-bondi-sc">0</span>
+                        Mahasiswa Informatika Unsika
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="absolute md:static md:hidden bottom-0">
+            <div class="flex relative justify-center items-end">
+                <!-- Setengah lingkaran -->
+                <div class="w-[300px] h-[150px] sm:w-[400px] sm:h-[200px] bg-[#80E3FF] rounded-t-full"></div>
+    
+                <!-- Gambar handphone -->
+                <img
+                    class="absolute bottom-0 max-w-lg w-100 sm:w-140"
+                    src="assets/images/hero-section/handphone.svg"
+                    alt="image-hero-study-club"
+                />
+            </div>
+        </div>
+
+        <img class="md:mx-auto hidden md:block" src="assets/images/hero-section/handphone-study-club.svg" alt="image-hero-study-club" />
+    </section>
+    <!-- END HERO SECTION -->
+
+    <!-- START LIVE SECTION -->
+    <div class="overflow-hidden bg-bondi-sc h-16 flex items-center relative">
+    <!-- Track bergerak -->
+        <div class="live-track flex gap-13">
+            <!-- 6+6 items -->
+            <div class="live flex items-center justify-between shrink-0 w-[235px]" >
+                <img src="assets/images/logo/live-logo-study-club.svg" alt="Live Study Club" />
+                <span class="text-white font-semibold italic text-2xl">Study Club</span>
+            </div>
+            <div class="live flex items-center justify-between shrink-0 w-[235px]" >
+                <img src="assets/images/logo/live-logo-study-club.svg" alt="Live Study Club" />
+                <span class="text-white font-semibold italic text-2xl">Study Club</span>
+            </div>
+            <div class="live flex items-center justify-between shrink-0 w-[235px]" >
+                <img src="assets/images/logo/live-logo-study-club.svg" alt="Live Study Club" />
+                <span class="text-white font-semibold italic text-2xl">Study Club</span>
+            </div>
+            <div class="live flex items-center justify-between shrink-0 w-[235px]" >
+                <img src="assets/images/logo/live-logo-study-club.svg" alt="Live Study Club" />
+                <span class="text-white font-semibold italic text-2xl">Study Club</span>
+            </div>
+            <div class="live flex items-center justify-between shrink-0 w-[235px]" >
+                <img src="assets/images/logo/live-logo-study-club.svg" alt="Live Study Club" />
+                <span class="text-white font-semibold italic text-2xl">Study Club</span>
+            </div>
+            <div class="live flex items-center justify-between shrink-0 w-[235px]" >
+                <img src="assets/images/logo/live-logo-study-club.svg" alt="Live Study Club" />
+                <span class="text-white font-semibold italic text-2xl">Study Club</span>
+            </div>
+
+            <!-- duplikasi untuk infinite scroll -->
+            <div class="live flex items-center justify-between shrink-0 w-[235px]" >
+                <img src="assets/images/logo/live-logo-study-club.svg" alt="Live Study Club" />
+                <span class="text-white font-semibold italic text-2xl">Study Club</span>
+            </div>
+            <div class="live flex items-center justify-between shrink-0 w-[235px]" >
+                <img src="assets/images/logo/live-logo-study-club.svg" alt="Live Study Club" />
+                <span class="text-white font-semibold italic text-2xl">Study Club</span>
+            </div>
+            <div class="live flex items-center justify-between shrink-0 w-[235px]" >
+                <img src="assets/images/logo/live-logo-study-club.svg" alt="Live Study Club" />
+                <span class="text-white font-semibold italic text-2xl">Study Club</span>
+            </div>
+            <div class="live flex items-center justify-between shrink-0 w-[235px]" >
+                <img src="assets/images/logo/live-logo-study-club.svg" alt="Live Study Club" />
+                <span class="text-white font-semibold italic text-2xl">Study Club</span>
+            </div>
+            <div class="live flex items-center justify-between shrink-0 w-[235px]" >
+                <img src="assets/images/logo/live-logo-study-club.svg" alt="Live Study Club" />
+                <span class="text-white font-semibold italic text-2xl">Study Club</span>
+            </div>
+            <div class="live flex items-center justify-between shrink-0 w-[235px]" >
+                <img src="assets/images/logo/live-logo-study-club.svg" alt="Live Study Club" />
+                <span class="text-white font-semibold italic text-2xl">Study Club</span>
+            </div>
+        </div>
+    </div>
+    <!-- END LIVE SECTION -->
+
+    <!-- Button Back To HIMTIKA -->
+    <div class="fixed bottom-6 right-6 md:bottom-8 md:right-9 z-50">
+        <a href="https://himtika.cs.unsika.ac.id/">
+            <button class="Btn">
+                <div class="sign">
+                    <img
+                        src="assets/images/logo/HIMTIKA.png"
+                        width="40"
+                        height="40"
+                        alt="HIMTIKA"
+                    />  
+                </div>            
+                <div class="text flex justify-center items-center h-full">
+                    <h1 class="font-jakarta text-md font-normal leading-0 mt-2.5">Back To <span class="text-lg font-bold italic">HIMTIKA</span></h1>
+                </div>
+            </button>
+        </a>
+    </div>
+    <!-- Button Back To HIMTIKA -->
+
+    <!-- JawaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
