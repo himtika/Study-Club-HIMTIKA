@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
     <!-- CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="assets/src/input.css">
     <link rel="stylesheet" href="assets/src/output.css">
     <link rel="stylesheet" href="assets/src/responsive.css">
 </head>
@@ -64,24 +66,24 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#wish-section" class="w-full py-2 lg:py-0 lg:w-auto text-center group block cursor-pointer transition duration-300">
+                            <a href="#documentation-section" class="w-full py-2 lg:py-0 lg:w-auto text-center group block cursor-pointer transition duration-300">
                                 <span class="inline-block py-1 lg:py-0 text-sm md:text-base
                                             tracking-wide font-semibold
                                             border-b-2 border-transparent 
                                             group-hover:border-b-bondi-sc 
                                             transition duration-300">
-                                Class
+                                Documentation
                                 </span>
                             </a>
                         </li>
                         <li>
-                            <a href="#gallery-section" class="w-full py-2 lg:py-0 lg:w-auto text-center group block cursor-pointer transition duration-300">
+                            <a href="#faq" class="w-full py-2 lg:py-0 lg:w-auto text-center group block cursor-pointer transition duration-300">
                                 <span class="inline-block py-1 lg:py-0 text-sm md:text-base
                                             tracking-wide font-semibold
                                             border-b-2 border-transparent 
                                             group-hover:border-b-bondi-sc 
                                             transition duration-300">
-                                Timeline
+                                FaQ
                                 </span>
                             </a>
                         </li>
@@ -193,7 +195,7 @@
         <!-- END LIVE SECTION -->
     
         <!-- START ABOUT SECTION -->
-        <section id="about" class="h-screen px-6 sm:px-12 md:px-15 lg:px-20 bg-radial-[at_40%_50%] from-cyan-200/50 from-5% to-gray-sc to-90% transition-all duration-500 selection:bg-bondi-sc selection:text-white flex justify-center items-center">
+        <section id="about" class="h-[120vh] px-6 sm:px-12 md:px-15 lg:px-20 bg-radial-[at_40%_50%] from-cyan-200/50 from-5% to-gray-sc to-90% transition-all duration-500 selection:bg-bondi-sc selection:text-white flex justify-center items-center">
             <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-13 w-[90%] lg:w-full">
                 <img 
                     id="about-image"
@@ -234,42 +236,23 @@
                     </p>
                     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-11 text-center w-[80%] sm:w-[60%] md:w-full mx-auto transition-all duration-500">
                         <!-- Data Science Card -->
-                        <div class="group bg-white rounded-lg lg:max-w-full px-4 py-6 hover:bg-[#80E3FF] hover:-translate-y-2 transition-all duration-500 shadow-md md:shadow-lg">
+                        <!-- <div class="group bg-white rounded-lg lg:max-w-full px-4 py-6 hover:bg-[#80E3FF] hover:-translate-y-2 transition-all duration-500 shadow-md md:shadow-lg">
                             <div class="w-[120px] lg:w-[130px] xl:w-[150px] md:h-[100px] lg:h-[120px] xl:h-fit flex justify-center items-center mx-auto">
                                 <img src="assets/images/class-section/python.svg" alt="data-science-class-image" />
                             </div>
                             <h3 class="text-cyan-sc text-xl sm:text-2xl font-semibold my-4 group-hover:text-white transition-all duration-500">Data Science</h3>
                             <p class="text-bondi-sc text-sm sm:text-base">Kelas Data Science memperkenalkan dasar-dasar analisis data dan machine learning.</p>
-                        </div>
+                        </div> -->
     
                         <!-- Mobile Programming Card -->
-                        <div class="group bg-white rounded-lg lg:max-w-full px-4 py-6 hover:bg-[#80E3FF] hover:-translate-y-2 transition-all duration-500 shadow-md md:shadow-lg">
+                        <!-- <div class="group bg-white rounded-lg lg:max-w-full px-4 py-6 hover:bg-[#80E3FF] hover:-translate-y-2 transition-all duration-500 shadow-md md:shadow-lg">
                             <div class="w-[120px] lg:w-[130px] xl:w-[150px] md:h-[100px] lg:h-[120px] xl:h-fit flex justify-center items-center mx-auto">
                                 <img src="assets/images/class-section/flutter.svg" alt="data-science-class-image" />
                             </div>
                             <h3 class="text-cyan-sc text-xl sm:text-2xl font-semibold my-4 group-hover:text-white transition-all duration-500">Mobile Programming</h3>
                             <p class="text-bondi-sc text-sm sm:text-base">Kelas Mobile Programming mencakup dasar-dasar pengembangan aplikasi mobile.</p>
-                        </div>
-    
-                        <!-- UI/UX Card -->
-                        <div class="group bg-white rounded-lg lg:max-w-full px-4 py-6 hover:bg-[#80E3FF] hover:-translate-y-2 transition-all duration-500 shadow-md md:shadow-lg">
-                            <div class="w-[120px] lg:w-[130px] xl:w-[150px] md:h-[100px] lg:h-[120px] xl:h-fit flex justify-center items-center mx-auto">
-                                <img src="assets/images/class-section/figma.svg" alt="data-science-class-image" />
-                            </div>
-                            <h3 class="text-cyan-sc text-xl sm:text-2xl font-semibold my-4 group-hover:text-white transition-all duration-500">UI/UX</h3>
-                            <p class="text-bondi-sc text-sm sm:text-base">Kelas UI/UX mengajarkan prinsip desain antarmuka dan pengalaman pengguna.</p>
-                        </div>
-    
-                        <!-- Webdev Card -->
-                        <div class="group bg-white rounded-lg lg:max-w-full px-4 py-6 hover:bg-[#80E3FF] hover:-translate-y-2 transition-all duration-500 shadow-md md:shadow-lg hidden md:block xl:hidden">
-                            <div class="w-20 lg:w-[100px] md:h-[100px] lg:h-[120px] xl:h-fit flex justify-center items-center mx-auto">
-                                <img src="assets/images/class-section/html.svg" alt="data-science-class-image" />
-                            </div>
-                            <h3 class="text-cyan-sc text-xl sm:text-2xl font-semibold my-4 group-hover:text-white transition-all duration-500">Web Development</h3>
-                            <p class="text-bondi-sc text-sm sm:text-base">Kelas Web Development membahas dasar-dasar pembuatan website.</p>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-1 xl:grid-cols-2 gap-8 mt-8 text-center w-[80%] sm:w-[60%] lg:w-[50%] xl:w-[70%] mx-auto transition-all duration-500">
+                        </div> -->
+
                         <!-- Web Development Card -->
                         <div class="group bg-white rounded-lg lg:max-w-full px-5 py-6 hover:bg-[#80E3FF] hover:-translate-y-2 transition-all duration-500 shadow-md md:shadow-lg md:hidden xl:block">
                             <div class="w-20 lg:w-[100px] md:h-[100px] lg:h-[120px] xl:h-fitflex justify-center items-center mx-auto">
@@ -287,7 +270,44 @@
                             <h3 class="text-cyan-sc text-xl sm:text-2xl font-semibold my-4 group-hover:text-white transition-all duration-500">Cyber Security</h3>
                             <p class="text-bondi-sc text-sm sm:text-base">Kelas Cyber Security membahas dasar keamanan digital dan melindungi data dari ancaman.</p>
                         </div>
+    
+                        <!-- UI/UX Card -->
+                        <div class="group bg-white rounded-lg lg:max-w-full px-4 py-6 hover:bg-[#80E3FF] hover:-translate-y-2 transition-all duration-500 shadow-md md:shadow-lg">
+                            <div class="w-[120px] lg:w-[115px] md:h-[100px] lg:h-[120px] flex justify-center items-center mx-auto">
+                                <img src="assets/images/class-section/figma.svg" alt="data-science-class-image" />
+                            </div>
+                            <h3 class="text-cyan-sc text-xl sm:text-2xl font-semibold my-4 group-hover:text-white transition-all duration-500">UI/UX</h3>
+                            <p class="text-bondi-sc text-sm sm:text-base">Kelas UI/UX mengajarkan prinsip desain antarmuka dan pengalaman pengguna.</p>
+                        </div>
+    
+                        <!-- Webdev Card -->
+                        <!-- <div class="group bg-white rounded-lg lg:max-w-full px-4 py-6 hover:bg-[#80E3FF] hover:-translate-y-2 transition-all duration-500 shadow-md md:shadow-lg hidden md:block xl:hidden">
+                            <div class="w-20 lg:w-[100px] md:h-[100px] lg:h-[120px] xl:h-fit flex justify-center items-center mx-auto">
+                                <img src="assets/images/class-section/html.svg" alt="data-science-class-image" />
+                            </div>
+                            <h3 class="text-cyan-sc text-xl sm:text-2xl font-semibold my-4 group-hover:text-white transition-all duration-500">Web Development</h3>
+                            <p class="text-bondi-sc text-sm sm:text-base">Kelas Web Development membahas dasar-dasar pembuatan website.</p>
+                        </div> -->
                     </div>
+                    <!-- <div class="grid grid-cols-1 xl:grid-cols-2 gap-8 mt-8 text-center w-[80%] sm:w-[60%] lg:w-[50%] xl:w-[70%] mx-auto transition-all duration-500">
+                        
+                        <div class="group bg-white rounded-lg lg:max-w-full px-5 py-6 hover:bg-[#80E3FF] hover:-translate-y-2 transition-all duration-500 shadow-md md:shadow-lg md:hidden xl:block">
+                            <div class="w-20 lg:w-[100px] md:h-[100px] lg:h-[120px] xl:h-fitflex justify-center items-center mx-auto">
+                                <img src="assets/images/class-section/html.svg" alt="data-science-class-image" />
+                            </div>
+                            <h3 class="text-cyan-sc text-xl sm:text-2xl font-semibold my-4 group-hover:text-white transition-all duration-500">Web Development</h3>
+                            <p class="text-bondi-sc text-sm sm:text-base">Kelas Web Development membahas dasar-dasar pembuatan website.</p>
+                        </div>
+    
+                        
+                        <div class="group bg-white rounded-lg lg:max-w-full px-4 py-6 hover:bg-[#80E3FF] hover:-translate-y-2 transition-all duration-500 shadow-md md:shadow-lg">
+                            <div class="w-[120px] lg:w-[115px] md:h-[100px] lg:h-[120px] xl:h-fitflex justify-center items-center mx-auto">
+                                <img src="assets/images/class-section/kali-linux.svg" alt="data-science-class-image" />
+                            </div>
+                            <h3 class="text-cyan-sc text-xl sm:text-2xl font-semibold my-4 group-hover:text-white transition-all duration-500">Cyber Security</h3>
+                            <p class="text-bondi-sc text-sm sm:text-base">Kelas Cyber Security membahas dasar keamanan digital dan melindungi data dari ancaman.</p>
+                        </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -296,6 +316,79 @@
             <!-- END JOIN US SECTION -->
         </section>
         <!-- END CLASS SECTION -->
+
+        <!-- START MENTOR SECTION -->
+        <section id="mentors" class="relative bg-white py-16 lg:py-24 bg-radial-[at_40%_50%] from-cyan-200/50 from-5% to-gray-sc to-60% selection:bg-bondi-sc selection:text-white">
+            
+            <div class="container mx-auto px-6 sm:px-16 md:px-12 lg:px-28">
+                
+                <div class="text-center mb-12 lg:mb-16">
+                    <h2 class="text-4xl lg:text-5xl font-bold text-cyan-sc mb-4">
+                        Our Mentor
+                    </h2>
+                    <p class="text-base lg:text-lg text-gray-600 max-w-2xl mx-auto">
+                        Temui para ahli yang akan membimbing Anda di setiap kelas. Dengan bimbingan mereka, Anda akan mendapatkan wawasan mendalam dan pengalaman praktis yang berharga.
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-6">
+                    <div class="relative max-w-[300px] h-[420px] rounded-3xl overflow-hidden shadow-lg group">
+                        <img src="assets/images/mentor-section/1.png" 
+                            alt="Bintang Danuarta"
+                            class="w-full h-full object-cover object-bottom transition-transform duration-300 group-hover:scale-105">
+                        
+                        <div class="absolute bottom-4 left-4 right-4 z-20 p-4 rounded-2xl bg-black/40 backdrop-blur-md border border-white/20">
+                            <div class="flex items-center justify-between gap-3">
+                                <div class="flex-1 min-w-0">
+                                    <h3 class="text-white font-bold text-lg truncate">Bintang Danuarta</h3>
+                                    <p class="text-white text-sm truncate">UI/UX Design</p>
+                                </div>
+                                <a href="#" class="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-white/25 text-white transition-all duration-300 group-hover:bg-white/40">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative max-w-[300px] h-[420px] rounded-3xl overflow-hidden shadow-lg group">
+                        <img src="assets/images/mentor-section/1.png" 
+                            alt="Afrido Ikhsan"
+                            class="w-full h-full object-cover object-bottom transition-transform duration-300 group-hover:scale-105">
+                        
+                        <div class="absolute bottom-4 left-4 right-4 z-20 p-4 rounded-2xl bg-black/40 backdrop-blur-md border border-white/20">
+                            <div class="flex items-center justify-between gap-3">
+                                <div class="flex-1 min-w-0">
+                                    <h3 class="text-white font-bold text-lg truncate">Afrido Ikhsan</h3>
+                                    <p class="text-white text-sm truncate">Web Development</p>
+                                </div>
+                                <a href="#" class="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-white/25 text-white transition-all duration-300 group-hover:bg-white/40">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative max-w-[300px] h-[420px] rounded-3xl overflow-hidden shadow-lg group">
+                        <img src="assets/images/mentor-section/1.png" 
+                            alt="Irfan Maulana"
+                            class="w-full h-full object-cover object-bottom transition-transform duration-300 group-hover:scale-105">
+                        
+                        <div class="absolute bottom-4 left-4 right-4 z-20 p-4 rounded-2xl bg-black/40 backdrop-blur-md border border-white/20">
+                            <div class="flex items-center justify-between gap-3">
+                                <div class="flex-1 min-w-0">
+                                    <h3 class="text-white font-bold text-lg truncate">Irfan Maulana</h3>
+                                    <p class="text-white text-sm truncate">Cyber Security</p>
+                                </div>
+                                <a href="#" class="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-white/25 text-white transition-all duration-300 group-hover:bg-white/40">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+        </section>
+        <!-- END MENTOR SECTION -->
 
         <!-- START TIMELINE SECTION -->
         <section id="timeline" class="px-6 pt-20 lg:pt-15 pb-10 lg:pb-30 sm:px-12 md:px-15 lg:px-20 bg-radial from-cyan-200/50 from-5% to-gray-sc to-98% transition-all duration-500 selection:bg-bondi-sc selection:text-white">
@@ -371,6 +464,228 @@
             </div>
         </section>
         <!-- END TIMELINE SECTION -->
+
+        <!-- START FAQ SECTION -->
+        <section id="faq" class="relative bg-white pt-30 pb-40 lg:pt-24 lg:pb-50 bg-radial-[at_40%_50%] from-cyan-200/50 from-5% to-gray-sc to-60% selection:bg-bondi-sc selection:text-white">
+            <div class="container mx-auto px-6 sm:px-16 md:px-12 lg:px-28">
+                
+                <div class="text-center mb-12 lg:mb-16">
+                    <h2 class="text-4xl lg:text-5xl font-bold text-cyan-sc mb-4">
+                        Frequently asked question
+                    </h2>
+                    <p class="text-base lg:text-lg text-gray-600 max-w-2xl mx-auto mb-4">
+                        Jika anda memiliki pertanyaan lain, kontak kami dengan klik tombol di bawah ini
+                    </p>
+                    <button
+                    type="submit"
+                    class="button-with-icon-faq flex justify-center gap-2 items-center mx-auto shadow-xl text-lg bg-cyan-500 border-cyan-500 
+                            relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group
+                            lg:font-semibold isolation-auto backdrop-blur-md
+                            text-white group-hover:text-cyan-500
+                            before:absolute before:h-full before:w-0 before:bg-white before:rounded-full before:top-0 before:left-0
+                            before:transition-all before:duration-700 before:group-hover:w-full before:-z-10
+                            transition-colors duration-300"
+                    >
+                        <span class="relative z-10 text-white group-hover:text-cyan-500 transition-colors duration-300">
+                            Kontak Kami
+                        </span>
+                        <span class="absolute top-0 left-0 w-0 h-full bg-white rounded-full transition-all duration-700 group-hover:w-full -z-10"></span>
+                        <svg
+                            class="w-8 h-8 justify-end bg-white group-hover:rotate-90 group-hover:bg-cyan-500 text-white ease-linear duration-300 rounded-full group-hover:border-none p-2 rotate-45"
+                            viewBox="0 0 16 19"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                            d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                            class="fill-cyan-500 group-hover:fill-white"
+                            ></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="w-full sm:w-[80%] max-w-5xl mx-auto mt-10 grid grid-cols-1 lg:grid-cols-2 gap-3 relative z-10">
+                    <ul class="container-accordion left-column flex flex-col gap-3 w-full">
+                        <li class="list-none w-auto p-2 lg:p-2.5 bg-white rounded-2xl">
+                            <input
+                                type="checkbox"
+                                name="accordion"
+                                id="first"
+                                class="accordion-toggle peer hidden"
+                            />
+                            <label for="first" class="flex items-center font-medium justify-between cursor-pointer md:text-base p-[5px] text-black transition-all duration-300 peer-checked:[&>i]:rotate-180"
+                                >Apa itu Study Club HIMTIKA?
+                                <i class="fa-solid fa-circle-arrow-down text-cyan-sc transition-transform duration-300"></i>
+                            </label>
+                            <div class="content max-h-0 overflow-hidden transition-all duration-500 ease-in-out peer-checked:max-h-[500px] peer-checked:pt-2 peer-checked:pb-1">
+                                <p class="text-black max-w-[580px] text-left">
+                                Study Club HIMTIKA adalah ruang kolaboratif dan inspiratif yang dirancang untuk memberikan mahasiswa informatika UNSIKA kesempatan mendalami ilmu di bidang IT. Melalui kegiatan ini, peserta dapat mengembangkan keterampilan teknis, berbagi wawasan, dan menjalin koneksi.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="list-none w-auto p-2 lg:p-2.5 bg-white rounded-2xl">
+                            <input
+                                type="checkbox"
+                                name="accordion"
+                                id="second"
+                                class="accordion-toggle peer hidden"
+                            />
+                            <label for="second" class="flex items-center font-medium justify-between cursor-pointer md:text-base p-[5px] text-black transition-all duration-300 peer-checked:[&>i]:rotate-180"
+                                >Siapa saja yang boleh mengikuti?
+                                <i class="fa-solid fa-circle-arrow-down text-cyan-sc transition-transform duration-300"></i>
+                            </label>
+                            <div class="content max-h-0 overflow-hidden transition-all duration-500 ease-in-out peer-checked:max-h-[500px] peer-checked:pt-2 peer-checked:pb-1">
+                                <p class="text-black max-w-[580px] text-left text-base">
+                                Kegiatan ini terbuka untuk seluruh mahasiswa aktif Informatika UNSIKA yang ingin mendalami keterampilan teknis, berkolaborasi, dan berbagi wawasan di bidang teknologi informasi.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="list-none w-auto p-2 lg:p-2.5 bg-white rounded-2xl">
+                            <input
+                                type="checkbox"
+                                name="accordion"
+                                id="third"
+                                class="accordion-toggle peer hidden"
+                            />
+                            <label for="third" class="flex items-center font-medium justify-between cursor-pointer md:text-base p-[5px] text-black transition-all duration-300 peer-checked:[&>i]:rotate-180"
+                                >Apakah ada biaya pendaftaran?
+                                <i class="fa-solid fa-circle-arrow-down text-cyan-sc transition-transform duration-300"></i>
+                            </label>
+                            <div class="content max-h-0 overflow-hidden transition-all duration-500 ease-in-out peer-checked:max-h-[500px] peer-checked:pt-2 peer-checked:pb-1">
+                                <p class="text-black max-w-[580px] text-left text-base">
+                                Tidak ada. Study Club HIMTIKA 100% gratis dan tidak dipungut biaya apapun, sebagai bentuk dedikasi kami untuk kemajuan bersama.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <ul class="container-accordion right-column flex flex-col gap-3 w-full">
+                        <li class="list-none w-auto p-2 lg:p-2.5 bg-white rounded-2xl">
+                            <input
+                                type="checkbox"
+                                name="accordion"
+                                id="fourth"
+                                class="accordion-toggle peer hidden"
+                            />
+                            <label for="fourth" class="flex items-center font-medium justify-between cursor-pointer md:text-base p-[5px] text-black transition-all duration-300 peer-checked:[&>i]:rotate-180"
+                                >Kelas apa saja yang tersedia?
+                                <i class="fa-solid fa-circle-arrow-down text-cyan-sc transition-transform duration-300"></i>
+                            </label>
+                            <div class="content max-h-0 overflow-hidden transition-all duration-500 ease-in-out peer-checked:max-h-[500px] peer-checked:pt-2 peer-checked:pb-1">
+                                <p class="text-black max-w-[580px] text-left text-base">
+                                Kami membuka berbagai kelas yang relevan dengan industri saat ini, seperti Web Development,  UI/UX Design, dan Cyber Security.
+                                </p>
+                            </div>
+                        </li>
+                        
+                        <li class="list-none w-auto p-2 lg:p-2.5 bg-white rounded-2xl">
+                            <input
+                                type="checkbox"
+                                name="accordion"
+                                id="fifth"
+                                class="accordion-toggle peer hidden"
+                            />
+                            <label for="fifth" class="flex items-center font-medium justify-between cursor-pointer md:text-base p-[5px] text-black transition-all duration-300 peer-checked:[&>i]:rotate-180"
+                                >Bagaimana sistem pembelajarannya?
+                                <i class="fa-solid fa-circle-arrow-down text-cyan-sc transition-transform duration-300"></i>
+                            </label>
+                            <div class="content max-h-0 overflow-hidden transition-all duration-500 ease-in-out peer-checked:max-h-[500px] peer-checked:pt-2 peer-checked:pb-1">
+                                <p class="text-black max-w-[580px] text-left text-base">Pembelajaran dilakukan secara kolaboratif melalui sesi hybrid (online dan offline) dengan bimbingan mentor. Fokus utamanya adalah pada praktik langsung dan pengerjaan proyek untuk membangun keterampilan teknis.</p>
+                            </div>
+                        </li>
+                        
+                        <li class="list-none w-auto p-2 lg:p-2.5 bg-white rounded-2xl">
+                            <input
+                                type="checkbox"
+                                name="accordion"
+                                id="sixth"
+                                class="accordion-toggle peer hidden"
+                            />
+                            <label for="sixth" class="flex items-center font-medium justify-between cursor-pointer md:text-base p-[5px] text-black transition-all duration-300 peer-checked:[&>i]:rotate-180"
+                                >Apa yang saya dapatkan setelah lulus?
+                                <i class="fa-solid fa-circle-arrow-down text-cyan-sc transition-transform duration-300"></i>
+                            </label>
+                            <div class="content max-h-0 overflow-hidden transition-all duration-500 ease-in-out peer-checked:max-h-[500px] peer-checked:pt-2 peer-checked:pb-1">
+                                <p class="text-black max-w-[580px] text-left text-base">Anda akan mendapatkan portofolio proyek (keterampilan teknis), e-sertifikat, serta kesempatan berharga untuk menjalin koneksi dan berbagi wawasan dengan para mentor dan sesama peserta.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- END FAQ SECTION -->
+
+        <!-- POPUP CONTACT SECTION -->
+        <section class="popup-contact" id="contact">
+            <!-- <div></div> -->
+            <form
+                class="form-contact font-jakarta p-6 sm:p-8 md:p-9"
+                method="post"
+                id="contact-form"
+                name="contact-form"
+                action="https://script.google.com/macros/s/AKfycbwJuY7wpmbgrCXjOnWTF30r7OQiFYEXUGdeSHbeUZ4OC9LRD4P7l2RT1LvJ-UePY5iGiQ/exec"
+            >
+                    <div class="text-center w-full mx-auto max-w-[183px] md:max-w-[260px]">
+                        <h2 class="text-4xl lg:text-5xl font-bold text-white mb-4">
+                            Contact Us
+                        </h2>
+                    </div>
+                    <span class="close-btn-contact" onclick="closePopup()">&times;</span>
+                <p class="message-contact selection:bg-white selection:text-blueGradientButtonEnd">we’re always open to any suggestions you may have</p>
+                <div class="flex-contact">
+                    <label>
+                        <input
+                        name="email"
+                        required=""
+                        placeholder=""
+                        type="email"
+                        class="input-contact"
+                        />
+                        <span class="selection:bg-blueGradientButtonMiddle selection:text-white">Email</span>
+                    </label>
+
+                    <label>
+                        <input
+                        name="phone"
+                        required=""
+                        placeholder=""
+                        type="tel"
+                        class="input-contact"
+                        pattern="[0-9]+"
+                        inputmode="numeric"
+                        oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                        title="Hanya boleh angka"
+                        />
+                        <span class="selection:bg-blueGradientButtonMiddle selection:text-white">Phone</span>
+                    </label>
+                </div>
+
+                <label>
+                    <input
+                        name="yourname"
+                        required=""
+                        placeholder=""
+                        type="text"
+                        class="input-contact"
+                    />
+                    <span class="selection:bg-blueGradientButtonMiddle selection:text-white">Your Name</span>
+                </label>
+
+                <label>
+                    <textarea
+                        name="message"
+                        rows="3"
+                        required=""
+                        placeholder=""
+                        class="input-contact"
+                    ></textarea>
+                    <span class="selection:bg-blueGradientButtonMiddle selection:text-white">Message</span>
+                </label>
+                <button class="submit-contact">Submit</button>
+            </form>
+        </section>
+        <!-- END POP UP CONTACT SECTION -->
     </main>
 
     <!-- START FOOTER SECTION -->
@@ -383,7 +698,7 @@
                             <span class="w-[156px] h-[156px] md:w-[186px] flex items-center justify-center bg-cover" style="background-image:url('assets/images/bg/bg-logo-footer.png')">
                                 <img src="assets/images/logo/logo-study-club.svg" alt="diesnatalis-logo" class="w-full h-full" />
                             </span>
-                            <span class="text-cyan-sc font-semibold md:font-bold tracking-tight text-lg sm:text-3xl">Study <span class="text-bondi-sc">Club</span></span>
+                            <span class="text-cyan-sc font-semibold md:font-bold tracking-tight text-2xl sm:text-3xl">Study <span class="text-bondi-sc">Club</span></span>
                         </a>
                         <div class="flex items-center justify-between mb-5">
                             <!-- Instagram -->
@@ -711,6 +1026,7 @@
     <!-- Button Back To HIMTIKA -->
 
     <!-- JawaScript -->
+    <script src="assets/js/googlesheet.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
