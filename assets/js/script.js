@@ -187,6 +187,44 @@ window.addEventListener("scroll", checkAndStartCounting);
 document.addEventListener("DOMContentLoaded", checkAndStartCounting);
 // END NUMBER COUNTING ANIMATION
 
+// START ABOUT SECTION
+document.addEventListener("DOMContentLoaded", function () {
+    let getStartedBtn = document.querySelector("#about button");
+    
+    // Ketika tombol Get Started diklik, scroll ke bagian About
+    getStartedBtn.addEventListener("click", function () {
+        window.open("https://www.instagram.com/studyclub_id/", "_blank");
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const img = document.getElementById("about-image");
+    const img2 = document.getElementById("about-image-2");
+
+    const images = [
+        "assets/images/about-section/about-section-1.jpg",
+        "assets/images/about-section/about-section-2.jpg",
+        "assets/images/about-section/about-section-3.jpg",
+        "assets/images/about-section/about-section-4.jpg"
+    ];
+
+    let index = 0;
+
+    setInterval(() => {
+        img.classList.add("opacity-0");
+        img2.classList.add("opacity-0");
+
+        setTimeout(() => {
+            index = (index + 1) % images.length;
+            img.src = images[index];
+            img2.src = images[index];
+            img.classList.remove("opacity-0");
+            img2.classList.remove("opacity-0");
+        }, 500);
+    }, 2000);
+});
+// END ABOUT SECTION
+
 //  FAQ SECTION - ACCORDION
 document.addEventListener("DOMContentLoaded", () => {
     const accordions = document.querySelectorAll(".accordion-toggle");
